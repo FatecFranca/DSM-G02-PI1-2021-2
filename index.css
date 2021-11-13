@@ -28,7 +28,9 @@
 #index{   
     background-image: url(img/fundo-index3-desfoque.jpg);   
     background-repeat: no-repeat;
-    background-size:cover; }
+    background-size:cover; 
+    background-attachment: fixed;
+}
 
 
 

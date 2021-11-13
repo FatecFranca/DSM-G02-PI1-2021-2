@@ -27,7 +27,9 @@
 #produtos{   
     background-image: url(img/fundo\ madera.jpg);   
     background-repeat: no-repeat;
-    background-size:cover;}
+    background-size:cover;
+    background-attachment: fixed;
+}
     
 
 
