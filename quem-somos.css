@@ -50,7 +50,7 @@ header:hover{
     display: flex;
     justify-content: center;   
     width: 250px; 
-    margin-left: 50px; }
+    margin-left: 100px; }
 
 
 #menu-principal{
@@ -117,12 +117,6 @@ section{
 
 
 
-main h2{
-    font-family: var(--fonte-texto1);
-    font-size: 60px;
-    font-style: normal;
-    padding-top: 30px;
-    align-items: center;  }
 
 
     
