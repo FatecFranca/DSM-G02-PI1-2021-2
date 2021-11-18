@@ -36,7 +36,7 @@
 header{
     display: flex;
     align-items: center; /*Centralização vertical*/ 
-    justify-content: center; 
+    justify-content: space-between; 
     height: 150px;
     flex-direction: baseline; }
 
@@ -100,9 +100,8 @@ main{
     display: flex;
     justify-content: center; /*Centralização horizontal*/
     align-items: stretch; /*Meus filhos tem meu tamanho*/    
-    min-height: 500px; } 
-
-
+    min-height: 500px; 
+} 
 
 section{
     display: flex;
@@ -111,18 +110,58 @@ section{
     flex-direction: column;/*filhos em coluna*/
     /*border: 1px solid rgb(32, 1, 53); */
     background-color: var(--cor-fundo);
-    min-height: 50%;  
+    /*min-height: 50%;*/  
     margin: 5px;
-    font-family: var(--fonte-texto); }
+    width: 100%;
+    font-family: var(--fonte-texto); 
+}
 
+section > h2{
+    text-align: left;
+    width: 100%;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+}
 
+.teste1{
+    border: 1px solid black;
+    background-color: black;
+    width: 300px;
+    height: 360px;
+    margin: 20px;
+    border-radius: 16px;
+}
 
+.teste1 div{
+    height: 360px;
+    border-radius: 16px;
+}
+
+.teste1 img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.teste1 h1{
+    margin: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.75rem;
+    color: black;
+}
+.teste1 p{
+    color: black;
+    margin: 0 20px;
+}
 main h2{
     font-family: var(--fonte-texto1);
     font-size: 60px;
     font-style: normal;
     padding-top: 30px;
-    align-items: center;  }
+    align-items:flex-start  
+}
 
 
     
@@ -135,21 +174,20 @@ article{
     margin: 5px;
     min-height: 50px;
     width: 100%;  }
-
-
-
+    
 article p {
     padding: 30px;
-    text-align: center;}
+    text-align: center;
+}
 
 
-
-figure img{
+/*figure img{
     margin-top: 20px;
     border:solid 4px rgb(255, 255, 255);
     width: 600px;
     height: 250px;
-    border-radius: 25px;  }
+    border-radius: 25px;  
+}*/
 
 
 
