@@ -115,10 +115,38 @@ section{
     margin: 5px;
     font-family: var(--fonte-texto); }
 
+#bloco{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    background-color: var(--cor-cinza);
+    outline: 5px solid var(--cor-amarela);
+    outline-offset: -20px;
+}
 
+#bloco p {
+    width: 65%;
+    font-size: 1.5rem;
+}
 
+#foto{
+    display: flex;
+    background-color: var(--cor-texto);
+    width: 26%;
+    height:344px;
+    margin-top: 29px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-cinza);
+}
 
-
+#foto p{    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
     
 article{
     display: flex;
@@ -211,12 +239,137 @@ address{
 
 
 /*Regras para tela com largura até 600px*/
-@media screen and (max-width: 600px){
+@media (max-width: 1200px) {
+    body {
+      border: 4px solid yellow;
+    }
+  
+    footer{
+        flex-direction: column;        
+        justify-content: center;
+        height: 400px;
+        justify-content: first baseline;
+    } 
+    
+    footer div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 35px;
+    }
+
+    footer div a{
+        
+        margin-right: 30px;
+    }
+
+    #social ul li a span {
+      display: none; /* Não preserva o espaço do elemento */
+    } 
+    
+}
+  
+  /* Dispositivos (tablets) */
+  @media (max-width: 992px) {
+    body {
+        border: 4px solid aqua;
+      }
+    footer{
+        flex-direction: column;        
+        justify-content: center;
+        height: 400px;
+        justify-content: first baseline;
+    } 
+    footer div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 35px;
+       
+        
+    }
+    footer div a{
+        
+        margin-right: 30px;
+    }
+     
+}
+  
+  /* Dispositivos (celulares) médios */
+  @media (max-width: 768px) {
+    body {
+        border: 4px solid green;
+      }
+  
+    #menu-principal {
+      min-height: 56px;
+      padding: 0;
+      margin: 0;      
+    }
+    
+    #menu-principal ul li a{
+        color: var(--cor-cinza);
+    }
+    #menu-contraido {
+      margin-top: 40px;
+      width: 100%;
+      background-color: var(--cor-texto);
+    }
+  
+    #menu-contraido input, #menu-contraido span {
+      display: block; /* Reexibe o botão do menu */
+      left: 20px;
+      top: -38px;
+    }
+  
+    #menu-contraido ul {
+      display: none;    
+      margin-top: 30px;
+    }
+  
+    #menu-contraido ul li {
+      display: block;
+      margin: 6px 0;
+    }
+  
+    #menu-contraido ul li a {
+      width: 100%;
+      display: flex;
+    }
+  
+    #menu-contraido input:checked ~ ul {
+      display: block; /* Reexibe o menu quando o checkbox for marcado */
+    }
+  
+    #menu-contraido input:checked,  #menu-contraido input:checked ~ span {
+      top: -30px;
+    }  
+   
+    footer {
+      flex-direction: column;
+
+    }
+  
+    footer img, footer address {
+      margin-bottom: 20px;
+    }
+  
+}
+  
+  /* Dispositivos (celulares) pequenos */
+  @media (max-width: 576px) {
+    body {
+        border: 4px solid red;
+      }
+
     main{
-        /* Muda a direção dos filhos para coluna vertical*/
-        flex-direction: column;
+        text-align: center;
+        justify-content: center;
     }
-    section, aside{
-        width: 100%;
+  
+    /* Empilha os elementos do header */
+    header {
+      flex-direction: column;
     }
-} 
+  
+}
