@@ -126,8 +126,11 @@ section{
 }
 
 #bloco p {
+    display: flex;
     width: 65%;
     font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 #foto{
@@ -148,7 +151,8 @@ section{
     align-items: center;
     justify-content: center;
 }
-    
+
+
 article{
     display: flex;
     justify-content: center; /*Centralização horizontal*/
@@ -167,6 +171,7 @@ article p {
 
 section h1{
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 figure img{
