@@ -280,12 +280,15 @@ footer img {
 #logo-footer{
     width: 170px; }
 
+#redes-social-footer{
+    display: flex;
+}
 
 
-.social-footer img{
-    margin: -16px;
-    width: 50px;  }
-    
+#redes-social-footer img{
+    width: 45px;
+}
+
 
 
 address{
@@ -298,137 +301,94 @@ address{
 
  
 
-@media (max-width: 1200px) {
-    body {
-      border: 4px solid yellow;
-    }
-  
-    footer{
-        flex-direction: column;        
-        justify-content: center;
-        height: 400px;
-        justify-content: first baseline;
-    } 
+    @media (max-width: 1200px) {
+        body {
+          border: 4px solid yellow;
+        }
     
-    footer div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 35px;
-    }
-
-    footer div a{
         
-        margin-right: 30px;
-    }
-
-    #social ul li a span {
-      display: none; /* Não preserva o espaço do elemento */
-    } 
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 400px;
+            justify-content: first baseline;
+        } 
+        
+        footer div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 35px;
+        }
     
-}
-  
-  /* Dispositivos (tablets) */
-  @media (max-width: 992px) {
-    body {
-        border: 4px solid aqua;
-      }
-    footer{
-        flex-direction: column;        
-        justify-content: center;
-        height: 400px;
-        justify-content: first baseline;
-    } 
-    footer div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 35px;
+        footer div a{
+            
+            margin-right: 30px;
+        }
+    
+        
+        
+    }
+      
+      /* Dispositivos (tablets) */
+      @media (max-width: 992px) {
+        body {
+            border: 4px solid aqua;
+          }
+    
        
         
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 400px;
+            justify-content: first baseline;
+        } 
+        footer div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 35px;
+           
+            
+        }
+        footer div a{
+            
+            margin-right: 30px;
+        }
+         
     }
-    footer div a{
-        
-        margin-right: 30px;
-    }
-     
-}
-  
-  /* Dispositivos (celulares) médios */
-  @media (max-width: 768px) {
-    body {
-        border: 4px solid green;
-      }
-  
-    #menu-principal {
-      min-height: 56px;
-      padding: 0;
-      margin: 0;      
-    }
+      
+      /* Dispositivos (celulares) médios */
+      @media (max-width: 768px) {
+        body {
+            border: 4px solid green;
+          } 
+       
+       
+        footer {        
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 450px;
     
-    #menu-principal ul li a{
-        color: var(--cor-cinza);
+        }
+    
+    
+        footer img, footer address {
+          margin-bottom: 20px;
+        }
+      
     }
-    #menu-contraido {
-      margin-top: 40px;
-      width: 100%;
-      background-color: var(--cor-texto);
+      
+      /* Dispositivos (celulares) pequenos */
+      @media (max-width: 576px) {
+        body {
+            border: 4px solid red;
+          }
+    
+        /* Empilha os elementos do header */
+        header {
+          flex-direction: column;
+        }
+      
     }
-  
-    #menu-contraido input, #menu-contraido span {
-      display: block; /* Reexibe o botão do menu */
-      left: 20px;
-      top: -38px;
-    }
-  
-    #menu-contraido ul {
-      display: none;    
-      margin-top: 30px;
-    }
-  
-    #menu-contraido ul li {
-      display: block;
-      margin: 6px 0;
-    }
-  
-    #menu-contraido ul li a {
-      width: 100%;
-      display: flex;
-    }
-  
-    #menu-contraido input:checked ~ ul {
-      display: block; /* Reexibe o menu quando o checkbox for marcado */
-    }
-  
-    #menu-contraido input:checked,  #menu-contraido input:checked ~ span {
-      top: -30px;
-    }  
-   
-    footer {
-      flex-direction: column;
-
-    }
-  
-    footer img, footer address {
-      margin-bottom: 20px;
-    }
-  
-}
-  
-  /* Dispositivos (celulares) pequenos */
-  @media (max-width: 576px) {
-    body {
-        border: 4px solid red;
-      }
-
-    main{
-        text-align: center;
-        justify-content: center;
-    }
-  
-    /* Empilha os elementos do header */
-    header {
-      flex-direction: column;
-    }
-  
-}

@@ -225,9 +225,14 @@ footer img {
 
 
 
-.social-footer img{
-    margin: -16px;
-    width: 50px;  }
+#redes-social-footer{
+    display: flex;
+    
+}
+
+#redes-social-footer img{
+    width: 45px;
+}
     
 
 
