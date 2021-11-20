@@ -131,7 +131,9 @@ section{
     font-size: 70px;
     color: #F2E2DC;
 }
-
+.lista_servico{
+    
+}
 .especilizacao{
     display: flex;
     align-items:center;
