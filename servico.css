@@ -25,7 +25,7 @@
 
 
 #serviços{   
-    background-image: url(img/background_img_2.jpg);   
+    background-image: url(img/background_img_2.jpg);  
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -52,15 +52,15 @@ header:hover{
     display: flex;
     justify-content: center;   
     width: 250px; 
-    margin-left: 100px; }
-
+    margin-left: 100px; 
+}
 
 #menu-principal{
     display:flex;     
     justify-content: center; /*Centralização horizontal*/  
     align-items: flex-end; /*Centralização vertical*/    
     background-color: transparent;
-    color:wheat;
+    color:#F7EFED;
     min-height: 25%;
     height: 36px;
     width: 100%;
@@ -70,17 +70,15 @@ header:hover{
 
 #menu-principal ul {   
     display: flex;   
-    list-style: none;  } /* Tira a decoração da lista */    
-
-
+    list-style: none;  
+} /* Tira a decoração da lista */    
 
 #menu-principal ul li {
     display: flex;
     height: 36px;
     margin: 0 10px; /* 0 topo e fundo, 10px esquerda e direita */   
-    font-family: var(--fonte-titulo);  } 
-
-
+    font-family: var(--fonte-titulo);  
+} 
 
 #menu-principal ul li a{   
     text-decoration: none;
@@ -96,7 +94,8 @@ header:hover{
 
 
 #menu-principal ul li a:hover{
-    color: var(--cor-amarela); }
+    color: var(--cor-amarela); 
+}
 
 
 
@@ -104,7 +103,8 @@ main{
     display: flex;
     justify-content: center; /*Centralização horizontal*/
     align-items: stretch; /*Meus filhos tem meu tamanho*/    
-    min-height: 500px; 
+    min-height: 500px;
+     
 } 
 
 section{
@@ -112,7 +112,7 @@ section{
     justify-content: center; /*Centralização horizontal*/
     align-items: center; /*Centralização vertical*/
     flex-direction: column;/*filhos em coluna*/
-    /*border: 1px solid rgb(32, 1, 53); */
+
     background-color: var(--cor-fundo);
     min-height: 50%; 
     margin: 5px;
@@ -124,48 +124,142 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px dotted var(--cor-amarela);
+    border-bottom: 2px dotted #F2E2DC;
     width: 100%;
 }
 .servicos h1{
     font-size: 70px;
-    color: var(--cor-texto);
+    color: #F2E2DC;
 }
 
-article{
+.especilizacao{
     display: flex;
     align-items:center;
+    justify-content: center;
     min-height: 50px;
     width: 100%;
     padding: 50px;
 }
-.serv1{
+
+
+/*PLATINADO---------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.platinado{
+    height: 300px;
+    width: 300px;
+    /*background-image: linear-gradient(to right, #030102,#353D3F,#454D4F,#686A69);
+    opacity: 45%;*/
     display: flex;
-    height: 200px;
-    width: 190px;
-}
-.serv1 img{
-    width: 100%;
-    height: 100%;
-}
-.text1 {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.text1 h2{
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -7px 10px 10px rgb(4, 4, 4);
+    border-radius: 25px;
+    margin-right: 50px;
     
-    margin-bottom: 40px;
-    color:var(--cor-texto);
+}
+.platinado img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    transition: 500ms;
+    border-radius: 25px;
+}
+.platinado img:hover{
+    opacity: 0;
+}
+.platinado h2{
     font-size: 30px;
+    text-align: justify;
 }
-.text1 p{
-    width: 50%;
-    font-size: 25px;
-    padding-left: 50px;
+.platinado p{
+    padding-top: 5px;
+    margin: 15px;
+    font-size: 20px;
+    text-align: justify;
 }
+
+
+/*PLASTICA---------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.plastica_fios{
+    height: 400px;
+    width: 300px;
+    /*background-image: linear-gradient(to right, #030102,#353D3F,#454D4F,#686A69);
+    opacity: 45%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -7px 10px 10px rgb(4, 4, 4);
+    border-radius: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.plastica_fios img{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    transition: 500ms;
+    border-radius: 25px;
+}
+.plastica_fios img:hover{
+    opacity: 0;
+}
+.plastica_fios h2{
+    font-size: 30px;
+    text-align: justify;
+}
+.plastica_fios p{
+    padding-top: 5px;
+    margin: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/*BLINDADO---------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.blindado{
+    height: 300px;
+    width: 300px;
+    /*background-image: linear-gradient(to right, #030102,#353D3F,#454D4F,#686A69);
+    opacity: 45%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -7px 10px 10px rgb(4, 4, 4);
+    border-radius: 25px;
+    margin-left: 50px;
+}
+.blindado img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    transition: 500ms;
+    border-radius: 25px;
+}
+.blindado img:hover{
+    opacity: 0;
+}
+.blindado h2{
+    font-size: 30px;
+    text-align: justify;
+}
+.blindado p{
+    padding-top: 5px;
+    margin: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
 
 footer{
     display: flex;
