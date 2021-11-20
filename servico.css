@@ -25,7 +25,7 @@
 
 
 #serviços{   
-    background-image: url(img/fundo\ corte.jpg);   
+    background-image: url(img/background_img_2.jpg);   
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -38,12 +38,14 @@ header{
     align-items: center; /*Centralização vertical*/ 
     justify-content: space-between; 
     height: 150px;
-    flex-direction: baseline; }
+    flex-direction: baseline; 
+}
 
 
 header:hover{
     filter: brightness(0.9);
-    filter:opacity(100%);}
+    filter:opacity(100%);
+}
 
 
 .logo{
@@ -58,11 +60,12 @@ header:hover{
     justify-content: center; /*Centralização horizontal*/  
     align-items: flex-end; /*Centralização vertical*/    
     background-color: transparent;
-    color: wheat;
+    color:wheat;
     min-height: 25%;
     height: 36px;
     width: 100%;
-    margin-top: 10px; }
+    margin-top: 10px; 
+}
 
 
 #menu-principal ul {   
@@ -155,7 +158,7 @@ article{
     width: 100%;
     
     margin-bottom: 40px;
-    color: var(--cor-amarela);
+    color:var(--cor-texto);
     font-size: 30px;
 }
 .text1 p{
