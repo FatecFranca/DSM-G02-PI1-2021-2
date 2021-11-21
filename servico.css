@@ -60,7 +60,7 @@ header:hover{
     justify-content: center; /*Centralização horizontal*/  
     align-items: flex-end; /*Centralização vertical*/    
     background-color: transparent;
-    color:#F7EFED;
+    color: var(--cor-texto);
     min-height: 25%;
     height: 36px;
     width: 100%;
@@ -124,15 +124,59 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px dotted #F2E2DC;
+    /*border-bottom: 2px dotted #F2E2DC;*/
     width: 100%;
 }
 .servicos h1{
     font-size: 70px;
     color: #F2E2DC;
 }
-.lista_servico{
-    
+.tabela_servicos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabelo{
+    width: 50%;
+    height: 100%;
+    background: var(--cor-cinza);
+    outline: 5px solid var(--cor-amarela);
+    outline-offset: -20px;
+}
+.cabelo h3, strong{
+    padding: 30px 0 10px 0;
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-amarela);
+}
+.cabelo ul{
+    list-style: none;
+    font-size: 20px;
+}
+.cabelo ul li{
+    padding: 0 0 30px 30px;
+}
+
+.barba{
+    width: 50%;
+    height: 100%;
+    background: var(--cor-cinza);
+    outline: 5px solid var(--cor-amarela);
+    outline-offset: -20px;
+}
+.barba h3, strong{
+    padding: 30px 0 10px 0;
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-amarela);
+}
+.barba ul{
+    list-style: none;
+    font-size: 20px;
+}
+.barba ul li{
+    padding: 0 0 30px 30px;
 }
 .especilizacao{
     display: flex;
