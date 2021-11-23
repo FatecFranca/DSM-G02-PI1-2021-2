@@ -337,7 +337,12 @@ address{
         width: 700px;
         height: 900px;
     }
-
+    header {
+        flex-direction: column;
+        }
+    header img{
+        margin-top: 30px;
+    }
     footer {
       flex-direction: column;
       justify-content: flex-end;
