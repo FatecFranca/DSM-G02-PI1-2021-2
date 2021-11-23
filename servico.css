@@ -331,7 +331,7 @@ section{
 .blindado img:hover{
     opacity: 0;
 }
-.blindado h2{
+.blindado h2 {
     font-size: 30px;
     text-align: justify;
 }
@@ -415,14 +415,112 @@ address{
     padding: 20px;
     color: black;  
 }
-
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
     @media (max-width: 1200px) {
         body {
           border: 4px solid yellow;
         }
-    
+        .platinado{
+            height: 200px;
+            width: 200px;
+            background: var(--cor-cinza);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: -7px 10px 10px rgb(4, 4, 4);
+            border-radius: 25px;
+            margin-right: 50px;
+            
+        }
+        .platinado img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 100;
+            transition: 500ms;
+            border-radius: 25px;
+        }
+        .platinado h2{
+            font-size: 10px;
+            text-align: justify;
+        }
+        .platinado p{
+            padding-top: 5px;
+            margin: 15px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .plastica_fios{
+            height: 200px;
+            width: 200px;
+            background: var(--cor-cinza);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: -7px 10px 10px rgb(4, 4, 4);
+            border-radius: 25px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .plastica_fios img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 100;
+            transition: 500ms;
+            border-radius: 25px;
+        }
+        .plastica_fios h2{
+            font-size: 10px;
+            text-align: justify;
+        }
+        .plastica_fios p{
+            padding-top: 5px;
+            margin: 15px;
+            font-size: 15px;
+            text-align: justify;
+        }
         
+        .blindado{
+            height: 200px;
+            width: 200px;
+            background: var(--cor-cinza);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: -7px 10px 10px rgb(4, 4, 4);
+            border-radius: 25px;
+            margin-left: 50px;
+        }
+        .blindado img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 100;
+            transition: 500ms;
+            border-radius: 25px;
+        }
+        .blindado h2{
+            font-size: 10px;
+            text-align: justify;
+        }
+        .blindado p{
+            padding-top: 5px;
+            margin: 15px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+
         footer{
             flex-direction: column;        
             justify-content: center;
@@ -452,8 +550,21 @@ address{
             border: 4px solid aqua;
           }
     
-       
-        
+        .tabela_servicos{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tabela_servicos_especiais{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .especilizacao{
+            width: 700px;
+        }
         footer{
             flex-direction: column;        
             justify-content: center;
@@ -479,8 +590,45 @@ address{
       @media (max-width: 768px) {
         body {
             border: 4px solid green;
-          } 
-       
+        }
+        header {
+            flex-direction: column;
+        }
+        header img{
+            margin-top: 30px;
+        }
+        .tabela_servicos{
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tabela_servicos_especiais{
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        .cabelo h3 strong, ul li{
+            font-size: 15px;
+        }
+        .barba h3 strong, ul li{
+            font-size: 15px;
+        }
+        .especiais h3 strong, ul li{
+            font-size: 15px;
+        }
+       .pai{
+           flex-direction: column;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .pai div{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
        
         footer {        
         flex-direction: column;
@@ -488,7 +636,6 @@ address{
         min-height: 450px;
     
         }
-    
     
         footer img, footer address {
           margin-bottom: 20px;
@@ -501,7 +648,38 @@ address{
         body {
             border: 4px solid red;
           }
-    
+        .tabela_servicos{
+            flex-direction: column;
+            width: 300px;
+        }
+        .cabelo, .barba{
+            width: 300px;
+        }
+        .tabela_servicos_especiais{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .especiais ul{
+            flex-direction: column;
+        }
+        .especilizacao{
+            width: 300px;
+        }
+        header img{
+            display: flex;
+            justify-content: center;
+        }
+        header {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin: 0px 0 0 0;
+            padding: 0px 0 0 0;
+        }
+        
         /* Empilha os elementos do header */
         header {
           flex-direction: column;
