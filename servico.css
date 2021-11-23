@@ -629,7 +629,10 @@ address{
             margin-left: 0px;
             margin-bottom: 20px;
         }
-       
+       .especilizacao{
+
+           width: 500px;
+       }
         footer {        
         flex-direction: column;
         justify-content: flex-end;
@@ -667,17 +670,9 @@ address{
         .especilizacao{
             width: 300px;
         }
-        header img{
-            display: flex;
-            justify-content: center;
-        }
-        header {
+        a .logo{
+            margin-left: 0;
             align-items: center;
-            display: flex;
-            justify-content: center;
-            border: 2px solid black;
-            margin: 0px 0 0 0;
-            padding: 0px 0 0 0;
         }
         
         /* Empilha os elementos do header */
