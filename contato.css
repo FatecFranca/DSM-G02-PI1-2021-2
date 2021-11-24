@@ -44,11 +44,12 @@ header:hover{
     filter:opacity(100%);}
 
 
-.logo{
-    display: flex;
-    justify-content: center;   
-    width: 250px; 
-    margin-left: 100px; }
+    .logo{
+        display: flex;
+        justify-content: center;   
+        width: 250px;
+        margin-top: -30px; 
+        margin-left: 100px; }
 
 
 #menu-principal{

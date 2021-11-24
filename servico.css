@@ -51,9 +51,9 @@ header:hover{
 .logo{
     display: flex;
     justify-content: center;   
-    width: 250px; 
-    margin-left: 100px; 
-}
+    width: 250px;
+    margin-top: -30px; 
+    margin-left: 100px; }
 
 #menu-principal{
     display:flex;     
