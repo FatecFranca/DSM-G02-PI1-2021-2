@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 250px;
+}
+
+#container{
+    width: 600px;
+    display:block;
+    justify-content: center;
+    position: relative;
+   
+}
+
+h2{
+    color: #ffffff;
+    
+}
+
+#tit{
+    background-color: #033818;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+form{
+    padding: 2px;
+    background-color: #effdbc;
+    display:block;
+    justify-content: center;
+    position: relative;
+}
+
+#nm{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#nm{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR &bull; Barbearia</title>
+    <link rel="stylesheet" href="agend.css">
+    <script type="text/javascript" src="form.js"></script>
+    <link rel="shortcut icon" href="img/barbeiro.png" type="image/x-icon">
+</head>
+<body id="produtos">
+    
+    <header>      
+            
+        <a href="index.html"> <img class="logo" src="img/logo2b.png" alt="Logotipo"> </a>  
+    
+        <nav id="menu-principal">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="servico.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="quem-somos.html">Quem somos</a>
+                </li>
+                <li>
+                    <a href="Contato.html">Contato</a>
+                </li>
+                
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        
+        <section> 
+            <div id="container">
+                <div id="tit" >
+                    <h2>
+                        Agende Seu Horário
+                    </h2>
+                </div>
+                <form id="back">
+                <div id="nm">
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome" class="formulario">
+                        <label>Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" class="formulario">     
+                    </div>
+    
+                    <div id="nm">
+                        <input  type="date" name="data" id="data" class="formulario">
+                        <input  type="Time" name="hora" id="hora" class="formulario">
+                    </div>
+    
+                    <div id="nm">
+                        <label>Escolha o serviço</label>
+                        <select id="servico" class="formulario">
+                            <option selected disabled value="">  </option>
+                            <option>Cabelo</option>
+                            <option>Barba</option>
+                            <option>Bigode</option>
+                        </select>
+                        
+                    </div>
+                    
+                </form>
+                <div id="bt">
+                    <button id="close" class="closing" onClick="pegaDados()"><img src="./img/enviar.png" /></button>
+                </div>
+            </div>  
+        </section>
+    
+    </main>
+    
+    <footer>
+        <img id="logo-footer" src="img/logo2.png" alt="">
+        <address>
+            Rua Major Antonio - 2200 <br>
+            Vila menu - 14401386 <br>
+            Franca/SP <br>
+        </address> 
+        <a href="Telefone">Telefone</a> <br>
+        <a href="Email">Email</a> <br>
+        
+    
+        <a target="blank" class="social-footer" href="https://www.facebook.com/Jrbarbershop22"><img src="img/facebook.png.png" alt=""></a>
+
+        <a target="blank" class="social-footer" href="https://www.instagram.com/jrbarbershopfranca/"><img src="img/instagram.png.png" alt=""></a>
+
+        <a class="social-footer" href="#"><img src="img/whatsapp.png.png" alt=""></a>
+    
+    </footer>
+  
+</body>
+</html>

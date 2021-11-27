@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+        <link rel="stylesheet" href="form.css">
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body>
+        
+        <div id="container">
+            <div id="tit" >
+                <h2>
+                    Agende Seu Horário
+                </h2>
+            </div>
+            <form id="back">
+            <div id="nm">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">     
+                </div>
+
+                <div id="nm">
+                    <input  type="date" name="data" id="data">
+                    <input  type="Time" name="hora" id="hora">
+                </div>
+
+                <div id="nm">
+                    <label>Escolha o serviço</label>
+                    <select id="servico">
+                        <option selected disabled value="">  </option>
+                        <option>Cabelo</option>
+                        <option>Barba</option>
+                        <option>Bigode</option>
+                    </select>
+                    
+                </div>
+                <input id="clickMe" type="button" value="clickme" onclick="pegaDados();" />
+            </form>
+        </div>
+
+    </body>
+</html>
