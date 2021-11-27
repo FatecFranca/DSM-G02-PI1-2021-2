@@ -3,7 +3,7 @@
 function pegaDados(){
     var site = 'https://wa.me/5516992380482?text=Olá%20Marcos.%20Sou%20o%20'
     var validar = 1
-    var corrigir = "Por favor, preencha o(s) campo (s):\n"
+    var corrigir = "Por favor, preencha o(s) campo(s):\n"
     var nome = document.querySelector("#nome")
     var sobrenome = document.querySelector("#sobrenome")
     var data = document.querySelector("#data")
