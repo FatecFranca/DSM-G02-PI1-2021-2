@@ -51,7 +51,8 @@ header:hover{
 .logo{
     display: flex;
     justify-content: center;   
-    width: 250px; 
+    width: 250px;
+    margin-top: -30px; 
     margin-left: 100px; }
     
 
@@ -99,7 +100,7 @@ header:hover{
 #menu-principal ul li a:hover{
     color: var(--cor-amarela); }
 
-
+      
 
 main{
     display: flex;
@@ -242,12 +243,15 @@ footer img {
 #logo-footer{
     width: 170px; }
 
+#redes-social-footer{
+    display: flex;
+}
 
 
-.social-footer img{
-    margin: -16px;
-    width: 50px;  }
-    
+#redes-social-footer img{
+    width: 45px;
+}
+
 
 
 address{
@@ -257,13 +261,115 @@ address{
 
 
 
-/*Regras para tela com largura até 600px*/
-@media screen and (max-width: 600px){
-    main{
-        /* Muda a direção dos filhos para coluna vertical*/
+
+ 
+
+    @media (max-width: 1200px) {
+        body {
+          border: 4px solid yellow;
+        }
+    
+        
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 400px;
+            justify-content: first baseline;
+        } 
+        
+        footer div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 35px;
+        }
+    
+        footer div a{
+            
+            margin-right: 30px;
+        }
+    
+        
+        
+    }
+      
+      /* Dispositivos (tablets) */
+      @media (max-width: 992px) {
+        body {
+            border: 4px solid aqua;
+          }
+    
+        .logo{
+            width: 200px;
+            margin-left: 30px;
+        }
+        
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 400px;
+            justify-content: first baseline;
+        } 
+        footer div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 35px;
+           
+            
+        }
+        footer div a{
+            
+            margin-right: 30px;
+        }
+         
+    }
+      
+      /* Dispositivos (celulares) médios */
+      @media (max-width: 768px) {
+        body {
+            border: 4px solid green;
+          } 
+        header {
         flex-direction: column;
+        margin-bottom: 50px;
+        }
+        header img{
+            margin-top: 30px;
+        }
+       
+        footer {        
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 450px;
+    
+        }
+    
+    
+        footer img, footer address {
+          margin-bottom: 20px;
+        }
+      
     }
-    section, aside{
-        width: 100%;
+      
+      /* Dispositivos (celulares) pequenos */
+      @media (max-width: 576px) {
+        body {
+            border: 4px solid red;
+          }
+
+        label[for="checar"]{
+            display: flex;
+        }
+        main{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        /* Empilha os elementos do header */
+        header {
+          flex-direction: column;
+        }
+      
     }
-} 

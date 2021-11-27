@@ -46,12 +46,12 @@ header:hover{
     filter:opacity(100%);}
 
 
-.logo{
-    display: flex;
-    justify-content: center;   
-    width: 250px; 
-    margin-left: 100px; }
-
+    .logo{
+        display: flex;
+        justify-content: center;   
+        width: 250px;
+        margin-top: -30px; 
+        margin-left: 100px; }
 
 #menu-principal{
     display:flex;     
@@ -115,11 +115,44 @@ section{
     margin: 5px;
     font-family: var(--fonte-texto); }
 
+#bloco{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    background-color: var(--cor-cinza);
+    outline: 5px solid var(--cor-amarela);
+    outline-offset: -20px;
+    margin-bottom: 40px;
+}
+
+#bloco p {
+    display: flex;
+    width: 65%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto{
+    display: flex;
+    background-color: var(--cor-texto);
+    width: 26%;
+    height:344px;
+    margin-top: 29px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-cinza);
+}
+
+#foto p{    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 
-
-
-    
 article{
     display: flex;
     justify-content: center; /*Centralização horizontal*/
@@ -136,7 +169,10 @@ article p {
     padding: 30px;
     text-align: center;}
 
-
+section h1{
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
 
 figure img{
     margin-top: 20px;
@@ -197,9 +233,14 @@ footer img {
 
 
 
-.social-footer img{
-    margin: -16px;
-    width: 50px;  }
+#redes-social-footer{
+    display: flex;
+    
+}
+
+#redes-social-footer img{
+    width: 45px;
+}
     
 
 
@@ -211,12 +252,135 @@ address{
 
 
 /*Regras para tela com largura até 600px*/
-@media screen and (max-width: 600px){
-    main{
-        /* Muda a direção dos filhos para coluna vertical*/
+@media (max-width: 1200px) {
+    body {
+      border: 4px solid yellow;
+    }
+  
+    footer{
+        flex-direction: column;        
+        justify-content: center;
+        height: 400px;
+        justify-content: first baseline;
+    } 
+    
+    footer div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 35px;
+    }
+
+    footer div a{
+        
+        margin-right: 30px;
+    }
+
+    #social ul li a span {
+      display: none; /* Não preserva o espaço do elemento */
+    } 
+    
+}
+  
+  /* Dispositivos (tablets) */
+  @media (max-width: 992px) {
+    body {
+        border: 4px solid aqua;
+      }
+
+    
+      #bloco {
+        width: 800px;
+        height: 800px;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;       
+    }
+
+    #bloco p {
+        width: 90%;
+    }
+
+    #foto{
+        width: 300px;
+    }
+
+
+    footer{
+        flex-direction: column;        
+        justify-content: center;
+        height: 400px;
+        justify-content: first baseline;
+    } 
+    footer div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 35px;
+       
+        
+    }
+    footer div a{
+        
+        margin-right: 30px;
+    }
+     
+}
+  
+  /* Dispositivos (celulares) médios */
+  @media (max-width: 768px) {
+    body {
+        border: 4px solid green;
+      }
+      
+    #bloco{
+        width: 700px;
+        height: 900px;
+    }
+    header {
         flex-direction: column;
+        }
+    header img{
+        margin-top: 30px;
     }
-    section, aside{
-        width: 100%;
+    footer {
+      flex-direction: column;
+      justify-content: flex-end;
+
     }
-} 
+  
+    footer img, footer address {
+      margin-bottom: 20px;
+    }
+  
+}
+  
+  /* Dispositivos (celulares) pequenos */
+  @media (max-width: 576px) {
+    body {
+        border: 4px solid red;
+      }
+    section h1{
+        margin-top: 100px;
+    }
+    #bloco{
+        width: 500px;
+        height: 1000px;
+    }
+
+
+    main{
+        text-align: center;
+        justify-content: center;
+    }
+  
+    /* Empilha os elementos do header */
+    header {
+      flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: flex-end;
+  
+      }
+}
