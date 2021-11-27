@@ -101,59 +101,94 @@ main{
     display: flex;
     justify-content: center; /*Centralização horizontal*/
     align-items: stretch; /*Meus filhos tem meu tamanho*/    
-    min-height: 500px; } 
+    height: 1800px; } 
 
 
 
 section{
     display: flex;
-    justify-content: center; /*Centralização horizontal*/
-    align-items: center; /*Centralização vertical*/
-    flex-direction: column;/*filhos em coluna*/
-    /*border: 1px solid rgb(32, 1, 53); */
-    background-color: var(--cor-fundo);
-    min-height: 50%;  
+    justify-content: top; 
+    align-items: top;
+    flex-direction: column;    
+    background-color: var(--cor-fundo);      
     margin: 5px;
     font-family: var(--fonte-texto); }
 
 
 
 #quadro{
+    margin-top: 50px;
     display: flex;
-    background-color: var(--cor-cinza);
-    width: 800px;
-    height: 400px;
-    margin-bottom: 30px;
-    justify-content: space-evenly;
-    align-items: center;
-    outline: 5px solid var(--cor-amarela);
-    outline-offset: -20px;
+    width: 1200px;
+    height: 1600px;
+    justify-content: space-around;
+    text-align: center;
+    
+   
 }
 
-.produto{
+main h2{
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: var(--cor-cinza);
-    width: 200px;
-    height: 200px;
-    background-color: whitesmoke;
+    font-size: 50px;
+    font-family: var(--fonte-texto);
+    margin-top: 20px;
+
+}
+main h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: var(--fonte-texto);
+    
     
 }
 
 
-main h2{
-    font-size: 40px;
-    font-family: var(--fonte-texto);
-    margin-bottom: 20px;
+.lado-direito h3{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+    
+    
+
+}
+.img-esquero{
+    margin: 20px 0 0 0;    
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+    border: 2px solid var(--cor-amarela);
+    background-color: var(--cor-cinza);
+    
 }
 
-figcaption{
-    color: var(--cor-amarela);
-    margin: 250px 0 0 0 ;
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
 }
-
-
+.img-direito{
+    margin: 20px 0 0 0;    
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+    border: 2px solid var(--cor-amarela);
+    background-color: var(--cor-cinza);
+}
 
 
 
