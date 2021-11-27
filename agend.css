@@ -179,7 +179,7 @@ label{
 }
 
 #tit{
-    background-color: #033818;
+    background-color: #048C4C;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -188,6 +188,10 @@ label{
     
 }
 
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+}
 
 footer{
     display: flex;
