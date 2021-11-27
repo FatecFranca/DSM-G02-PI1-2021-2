@@ -6,10 +6,13 @@ body{
 }
 
 #container{
+    
     width: 600px;
     display:block;
     justify-content: center;
     position: relative;
+    
+    
    
 }
 
@@ -28,11 +31,13 @@ h2{
 }
 
 form{
+    
     padding: 2px;
     background-color: #effdbc;
     display:block;
     justify-content: center;
     position: relative;
+    
 }
 
 #nm{
