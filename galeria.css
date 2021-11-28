@@ -125,6 +125,10 @@ section{
     
    
 }
+.lado-direito h3{
+    text-align: center;
+}
+
 
 main h2{
     display: flex;
@@ -135,29 +139,22 @@ main h2{
 
 }
 main h3{
+    text-align: center;
     display: flex;
     justify-content: center;
     font-size: 40px;
     font-family: var(--fonte-texto);
+   
     
     
 }
 
 
-.lado-direito h3{
-    display: flex;
-    justify-content: center;
-    
-    
-}
+
 .lado-esquerdo{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    
-    
+       
     
 
 }
@@ -165,7 +162,7 @@ main h3{
     margin: 20px 0 0 0;    
     align-items: flex-start;
     width: 300px;
-    height: 300px;
+    height: 400px;
     margin-bottom: 100px;
     border: 2px solid var(--cor-amarela);
     background-color: var(--cor-cinza);
@@ -175,21 +172,23 @@ main h3{
 .lado-direito{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+   
 
 }
 .img-direito{
     margin: 20px 0 0 0;    
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 400px;
     margin-bottom: 100px;
     border: 2px solid var(--cor-amarela);
     background-color: var(--cor-cinza);
 }
 
-
+div video{
+    
+    height: 400px;
+}
 
 
 footer{
@@ -255,13 +254,228 @@ address{
 
 
 
-/*Regras para tela com largura até 600px*/
-@media screen and (max-width: 600px){
-    main{
-        /* Muda a direção dos filhos para coluna vertical*/
+
+    @media (max-width: 1200px) {
+        body {
+          border: 4px solid yellow;
+        }
+    
+        main{
+            height: 1200px;
+        }
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 530px;
+            margin-top:300px 
+            
+            
+        } 
+        .lado-direito, .img-direito {
+            width: 200px;
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .lado-esquerdo, .img-esquero{
+            width: 200px;
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+        }
+        .lado-esquerdo, .img-esquero img{
+            width: 200px;
+            height: 250px;
+            align-items: center;
+        }
+
+        .lado-direito, .img-direito img{
+            width: 200px;
+            height: 250px;            
+            align-items: center;
+        }
+        #quadro{
+            height: 1000px;
+            width: 1000px;
+            justify-content: space-around;
+            margin-top: 600px;
+                      
+            
+        }
+
+        div video{
+            height: 250px;
+        }       
+        
+        .social-footer, a {
+            margin-bottom: 20px;
+          }
+    
+        
+        
+    }
+      
+      /* Dispositivos (tablets) */
+      @media (max-width: 992px) {
+        body {
+            border: 4px solid aqua;
+          }
+    
+        .logo{
+            width: 200px;
+            margin-left: 30px;
+        }
+        
+        footer{
+            flex-direction: column;        
+            justify-content: center;
+            height: 550px;
+            justify-content: first baseline;
+        } 
+        footer div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 35px;
+           
+            
+        }
+        #quadro{
+            width: 800px;
+        }
+         
+    }
+      
+      /* Dispositivos (celulares) médios */
+      @media (max-width: 768px) {
+        body {
+            border: 4px solid green;
+          } 
+        header {
         flex-direction: column;
+        margin-bottom: 50px;
+        }
+        
+        main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo{
+            margin-top: 80px;
+        }
+
+        .lado-direito h3{
+            justify-content: baseline;
+            font-size: 25px;
+          
+        }
+        .lado-esquerdo h3{
+            justify-content: baseline;
+            font-size: 25px;
+            
+        }
+
+
+        .lado-direito, .img-direito {
+            width: 150px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+
+        }
+            
+            
+      
+
+        .lado-esquerdo, .img-esquero{
+            width: 150px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+        .lado-esquerdo, .img-esquero img{
+            width: 150px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .lado-direito, .img-direito img{
+            width: 150px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #quadro{
+            display: flex;            
+            width: 680px;
+            justify-content: space-around;           
+            
+           
+                      
+            
+        }
+        .img-direito video{
+            height: 200px;
+        }
+
+
+        footer {        
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 450px;
+    
+        }
+    
+    
+        footer img, footer address {
+          margin-bottom: 20px;
+        }
+      
     }
-    section, aside{
-        width: 100%;
+      
+      /* Dispositivos (celulares) pequenos */
+      @media (max-width: 576px) {
+        body {
+            border: 4px solid red;
+          }
+
+        main{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        section{
+            margin-top: 600px;
+        }
+
+        #quadro{
+            width: 500px;
+        }
+    
+        /* Empilha os elementos do header */
+        header {
+          flex-direction: column;
+        }
+        
+        footer a,img{
+            font-size: 10px;
+        }
+        address{
+            font-size: 10px;
+        }
+        .social-footer img{
+            width: 30px;
+        }
+        #logo-footer{
+            width: 100px;
+        }
+        footer{
+            height: 300px;
+        }
     }
-} 
