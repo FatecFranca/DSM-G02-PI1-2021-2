@@ -190,12 +190,9 @@ label{
 }
 
 #tit{
-<<<<<<< HEAD
     background-color: var;
-=======
     background-color: #F7E816;
->>>>>>> f607b161721de88dff35a9071d5964706c8a7d13
-    padding: 5px;
+     padding: 5px;
     display: flex;
     justify-content: center;
     position: relative;
