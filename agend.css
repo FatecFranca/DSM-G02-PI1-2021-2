@@ -149,6 +149,7 @@ main h2{
     font-size: 70px;
     font-family: var(--fonte-texto);
     margin-bottom: 20px;
+    color: black;
 }
 
 figcaption{
@@ -189,7 +190,11 @@ label{
 }
 
 #tit{
+<<<<<<< HEAD
     background-color: var;
+=======
+    background-color: #F7E816;
+>>>>>>> f607b161721de88dff35a9071d5964706c8a7d13
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -197,6 +202,12 @@ label{
     border-radius: 22px 22px 1px 1px;
     
 }
+
+
+select {
+    color: #FFF;
+    
+  }
 
 form{
     background-color: rgba(0, 0, 0, 0.5);
