@@ -150,8 +150,9 @@ section{
     text-align: center;
     align-items: center;
     justify-content: center;
+}#foto img{
+    border-radius: 16px;
 }
-
 
 article{
     display: flex;

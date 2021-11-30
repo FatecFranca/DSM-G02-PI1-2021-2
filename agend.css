@@ -189,7 +189,7 @@ label{
 }
 
 #tit{
-    background-color: #048C4C;
+    background-color: var;
     padding: 5px;
     display: flex;
     justify-content: center;
