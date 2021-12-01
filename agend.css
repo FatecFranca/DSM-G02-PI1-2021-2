@@ -120,31 +120,6 @@ section{
 
 
 
-#quadro{
-    display: flex;
-    background-color: var(--cor-cinza);
-    width: 800px;
-    height: 400px;
-    margin-bottom: 30px;
-    justify-content: space-evenly;
-    align-items: center;
-    outline: 5px solid var(--cor-amarela);
-    outline-offset: -20px;
-}
-
-.produto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--cor-cinza);
-    width: 200px;
-    height: 200px;
-    background-color: whitesmoke;
-    
-}
-
-
-
 main h2{
     font-size: 70px;
     font-family: var(--fonte-texto);
@@ -152,10 +127,7 @@ main h2{
     color: black;
 }
 
-figcaption{
-    color: var(--cor-amarela);
-    margin: 250px 0 0 0 ;
-}
+
 
 #nm{
     display: flex;
@@ -181,6 +153,20 @@ figcaption{
     border:none; 
     cursor: pointer;
 }
+select, option {
+    background-color: transparent;
+    color: var(--cor-cinza);
+}
+
+#botao{
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    background-color: var(--cor-amarela);
+    outline: 3px solid var(--cor-cinza);
+    outline-offset: -8px;
+      
+}
 
 
 
@@ -190,9 +176,9 @@ label{
 }
 
 #tit{
-    background-color: var;
-    background-color: #F7E816;
-     padding: 5px;
+    
+    background-color: var(--cor-amarela);
+    padding: 5px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -202,7 +188,8 @@ label{
 
 
 select {
-    color: #FFF;
+    background-color: var(--cor-texto);
+    color: var(--cor-cinza);
     
   }
 
@@ -210,6 +197,7 @@ form{
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 30px;
     border-radius: 1px 1px 22px 22px;
+    height: 300px;
 }
 
 footer{
@@ -278,7 +266,7 @@ address{
 /* Dispositivos (celulares) médios */
 @media (max-width: 768px) {
     body {
-        border: 4px solid green;
+       
       } 
     header {
     flex-direction: column;
@@ -290,9 +278,15 @@ address{
    
     footer {        
     flex-direction: column;
-    justify-content: flex-end;
-    min-height: 450px;
+    justify-content: flex-start;
+    min-height: 480px;
 
+    }
+    .social-footer img{
+        margin-bottom:10px ;
+    }
+    footer a {
+        margin-bottom: 5px;
     }
 
     /*Formulario*/
@@ -317,16 +311,20 @@ address{
             flex-direction: column;
             margin: 20px;
         }
-
+        form{
+            height: 430px;
+            width: 500px;
+        }
         .formulario{
-            font-size: 10px;
+            font-size: 15px;
             border: 2px solid #fff;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 10px 5px;
         }
         label{
             display: block;
-            font-size: 20px;
+            font-size: 30px;
+            
         }
         .logo{
             display: flex;
@@ -336,47 +334,7 @@ address{
             margin-left: 20px; }
 
         /*Formulario*/
-        main h2{
-            font-size: 25px;
-            font-family: var(--fonte-texto);
-            margin-bottom: 20px;
-            color: black;
-        }
-        #tit{
-            background-color: var;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            border-radius: 22px 22px 1px 1px;
-            
-        }
-        #nm{
-            display: flex;
-            justify-content: center;
-            position: relative;
-            flex-direction: column;
-            margin: 20px;
-        }
-
-        .formulario{
-            font-size: 10px;
-            border: 2px solid #fff;
-            border-radius: 10px;
-            padding: 10px 5px;
-        }
-        label{
-            display: block;
-            font-size: 20px;
-        }
-        .logo{
-            display: flex;
-            justify-content: center;   
-            width: 200px;
-            margin-top: 20px;
-            margin-left: 20px; }
-      
-    }
-
+        
 
 
     /* Dispositivos (celulares) pequenos */
@@ -384,7 +342,7 @@ address{
 
 
         body {
-            border: 4px solid red;
+           
           }
 
         label[for="checar"]{
@@ -413,7 +371,7 @@ address{
             display: flex;
             justify-content: center;
             position: relative;
-            border-radius: 22px 22px 1px 1px;
+            border-radius: 16px 22px 1px 1px;
             
         }
         #nm{
@@ -430,10 +388,7 @@ address{
             border-radius: 10px;
             padding: 10px 5px;
         }
-        label{
-            display: block;
-            font-size: 20px;
-        }
+       
         .logo{
             display: flex;
             justify-content: center;   
@@ -442,5 +397,4 @@ address{
             margin-left: 20px; }
       
     }
-  
-
+   
