@@ -51,7 +51,7 @@ header:hover{
     justify-content: center;   
     width: 250px;
     margin-top: 20px;
-    margin-left: 100px; }
+    margin-left: 5px; }
 
 #menu-principal{
     display:flex;     
@@ -265,9 +265,7 @@ address{
 
 /* Dispositivos (celulares) médios */
 @media (max-width: 768px) {
-    body {
-       
-      } 
+    
     header {
     flex-direction: column;
     margin-bottom: 50px;
@@ -334,17 +332,14 @@ address{
             margin-left: 20px; }
 
         /*Formulario*/
-        
+    }   
 
 
     /* Dispositivos (celulares) pequenos */
     @media (max-width: 576px) {
 
 
-        body {
-           
-          }
-
+       
         label[for="checar"]{
             display: flex;
         }
